@@ -54,8 +54,7 @@ class map(object):
 
 
          #self.rails[revSrc].append(revDest)
-    def childrenOf(self, city):
-        return self.rails[city]
+    def childrenOf(self, city): return self.rails[city]
     def hasCity(self, city):
         return city in self.cities
     def __str__(self):
