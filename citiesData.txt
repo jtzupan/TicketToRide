@@ -1,7 +1,0 @@
-atlanta,toronto,5
-atlanta,phoenix,7
-phoenix,denver,3
-denver,toronto,9
-toronto,phoenix,12
-denver,seattle,4
-atlanta,miami,3
