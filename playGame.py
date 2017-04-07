@@ -38,49 +38,7 @@ def load_map(mapFilename):
     #print board.childrenOf(bs.city('atlanta'))
     return board
 
-# def load_maptest(fileName):
-#     file_in = open(fileName, 'r')
-#     cityList = []
-#     for city in file_in:
-#         x = city.rstrip('\n').split(',')
-#         if x[0] not in cityList:
-#             cityList.append(x[0])
-#         if x[1] not in cityList:
-#             cityList.append(x[1])
-#     finalList = []
-#     for i in cityList:
-#         #finalList.append(city(i))
-#         print i
-#     g = map()
-#     for n in finalList:
-#         g.addCity(n)
-#     g.addRail(rail(finalList[0], finalList[1]))
-#     g.addRail(rail(finalList[1], finalList[2]))
-#     g.addRail(rail(finalList[3], finalList[2]))
-#     return g
- 
-#def l1():
- #   denver = city('denver')
-#     toronto =city('toronto')
-#     atlanta = city('atlanta')
-#     phoenix = city('phoenix')
-#     dt = rail(denver, toronto, 6)
-#     ta = rail(toronto, atlanta, 7)
-#     ap = rail(atlanta, phoenix, 3)
-#     tp = rail(toronto, phoenix, 4)
-#     pd = rail(phoenix, denver, 5)
-#     g = map()
-#     g.addCity(atlanta)
-#     g.addCity(denver)
-#     g.addCity(phoenix)
-#     g.addCity(toronto)
-#     g.addRail(dt)
-#     g.addRail(ta)
-#     g.addRail(tp)
-#     g.addRail(ap)
-#     g.addRail(pd)
-#     print g.childrenOf(atlanta)
-#    return g
+
  
 def shortestRail(graph, start, end, path = []):
     path = path + [bs.city(start)]
